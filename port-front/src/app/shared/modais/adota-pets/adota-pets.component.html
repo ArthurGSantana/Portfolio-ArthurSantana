@@ -1,0 +1,49 @@
+<section class="container">
+
+  <div class="title">
+    <span>Adota<i class="material-icons">pets</i>Pets</span>
+  </div>
+
+  <div class="img-ctn">
+    <button mat-mini-fab class="btn left" (click)="carousel('left')">
+      <i class="fas fa-angle-left"></i>
+    </button>
+    <div class="img" *ngIf="ponteiro === 1">
+      <img src="../../../../assets/imgs/angular/adota-pets.png" alt="pagina home adota-pets">
+    </div>
+    <div class="img" *ngIf="ponteiro === 2">
+      <img src="../../../../assets/imgs/angular/adota-pets-perdeu.png" alt="pagina perdidos adota-pets">
+    </div>
+    <div class="img" *ngIf="ponteiro === 3">
+      <img src="../../../../assets/imgs/angular/adota-pets-pq.png" alt="pagina porque adotar">
+    </div>
+    <button mat-mini-fab class="btn rigth" (click)="carousel('rigth')">
+      <i class="fas fa-angle-right"></i>
+    </button>
+  </div>
+
+  <div class="card-container">
+    <mat-card class="card">
+      <mat-card-content class="content">
+        <span>
+          Projeto feito com Angular versão 11, utilizei o Angular Material para desenvolver os componentes
+          visuais. Desenvolvido para ser meu trabalho de conclusão de curso, elaborei o sistema para ajudar
+          as pessoas na hora de adotar um novo pet. Implementei algumas opções adicionais como, auxílio pra quem
+          perdeu seu pet ou achou algum e um painel somente para as ONGs parceiras utilizarem como monitoramento
+          dos animais deles que pertecem ao nosso sistema.
+        </span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="footer">
+    <div class="btn-footer">
+      <button mat-mini-fab class="close" mat-dialog-close>
+        <i class="fas fa-times"></i>
+      </button>
+      <button mat-mini-fab class="git">
+        <a href="https://github.com/ArthurGSantana/TCC-AdotarPets" target="_blank"><i class="fab fa-github"></i></a>
+      </button>
+    </div>
+  </div>
+</section>

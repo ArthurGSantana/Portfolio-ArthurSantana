@@ -1,0 +1,38 @@
+
+<section class="container fadeIn">
+  <mat-card class="card">
+    <mat-tab-group mat-align-tabs="center" class="tab-group" animationDuration="300ms">
+
+      <mat-tab class="tab">
+        <ng-template mat-tab-label class="template">
+          <span class="label" style="color: #FFFFFF; font-size: 1.7rem;">
+            <i class="fab fa-angular"></i>
+            Angular
+          </span>
+        </ng-template>
+        <port-angular></port-angular>
+      </mat-tab>
+
+      <mat-tab class="tab">
+        <ng-template mat-tab-label>
+          <span style="color: #FFFFFF; font-size: 1.7rem;">
+            <i class="fab fa-react"></i>
+            React
+          </span>
+        </ng-template>
+        <port-react></port-react>
+      </mat-tab>
+
+      <mat-tab class="tab">
+        <ng-template mat-tab-label>
+          <span style="color: #FFFFFF; font-size: 1.7rem;">
+            <i class="fab fa-js-square"></i>
+            JavaScript
+          </span>
+        </ng-template>
+        <port-javascript></port-javascript>
+      </mat-tab>
+
+    </mat-tab-group>
+  </mat-card>
+</section>

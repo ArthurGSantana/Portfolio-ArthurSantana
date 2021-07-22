@@ -1,0 +1,63 @@
+<section class="container">
+
+  <div class="title">
+    <span>PIC-GALLERY</span>
+  </div>
+
+  <div class="img-ctn">
+    <button mat-mini-fab class="btn left" (click)="carousel('left')">
+      <i class="fas fa-angle-left"></i>
+    </button>
+    <div class="img" *ngIf="ponteiro === 1">
+      <img src="../../../../assets/imgs/angular/pic-gallery.png" alt="pagina home pic-gallery">
+    </div>
+    <div class="img" *ngIf="ponteiro === 2">
+      <img src="../../../../assets/imgs/angular/pic-gallery-painel.png" alt="pagina painel pic-gallery">
+    </div>
+    <div class="img" *ngIf="ponteiro === 3">
+      <img src="../../../../assets/imgs/angular/pic-gallery-add.png" alt="pagina add pic-gallery">
+    </div>
+    <div class="img" *ngIf="ponteiro === 4">
+      <img src="../../../../assets/imgs/angular/pic-gallery-painel-limpo.png" alt="pagina add pic-gallery">
+    </div>
+    <div class="img" *ngIf="ponteiro === 5">
+      <img src="../../../../assets/imgs/angular/pic-gallery-busca.png" alt="pagina add pic-gallery">
+    </div>
+    <div class="img" *ngIf="ponteiro === 6">
+      <img src="../../../../assets/imgs/angular/pic-gallery-preview.png" alt="pagina add pic-gallery">
+    </div>
+    <div class="img" *ngIf="ponteiro === 7">
+      <img src="../../../../assets/imgs/angular/pic-gallery-help.png" alt="pagina add pic-gallery">
+    </div>
+    <button mat-mini-fab class="btn rigth" (click)="carousel('rigth')">
+      <i class="fas fa-angle-right"></i>
+    </button>
+  </div>
+
+  <div class="card-container">
+    <mat-card class="card">
+      <mat-card-content class="content">
+        <span>
+          Projeto feito com Angular versão 11, utilizei o Angular Material para desenvolver os componentes
+          visuais. Desenvolvido com feature modules e lazy loading, trabalhei com diretivas, pipes, resolvers
+          e services. Feito para colocar fotos em uma galeria web com requisições http utilizando Observables
+          e operadores rxjs.
+        </span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="footer">
+    <div class="btn-footer">
+      <button mat-mini-fab class="close" mat-dialog-close>
+        <i class="fas fa-times"></i>
+      </button>
+      <button mat-mini-fab class="git">
+        <a href="https://github.com/ArthurGSantana/PIC-GALLERY" target="_blank"><i class="fab fa-github"></i></a>
+      </button>
+      <button mat-mini-fab class="web">
+        <i class="fas fa-pager"></i>
+      </button>
+    </div>
+  </div>
+</section>

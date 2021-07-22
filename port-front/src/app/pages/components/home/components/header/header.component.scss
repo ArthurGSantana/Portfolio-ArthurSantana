@@ -1,0 +1,89 @@
+$primary-color: #191970;
+$secundary-color: #131418;
+$font-color: #f7f4f4;
+$font-strong: #e2dede;
+
+.toolbar {
+  width: auto;
+  height: 70px;
+  background-image: linear-gradient($primary-color, $secundary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid $font-color;
+
+  div {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      user-select: none;
+      font-family: 'Encode Sans SC', sans-serif;
+      font-size: 2.2rem;
+      color: $font-color;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      color: $font-color;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}
+
+.options-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  section {
+    user-select: none;
+    height: 50px;
+    width: 60%;
+    background-image: linear-gradient($secundary-color, #000000);
+    border-radius: 0 0 30px 30px;
+    border-bottom: 2px solid $font-color;
+    border-left: 2px solid $font-color;
+    border-right: 2px solid $font-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+
+        h2 {
+          padding-top: 10px;
+          color: $font-color;
+          font-family: 'Encode Sans SC', sans-serif;
+          font-size: 1.4rem;
+          transition: font-size .2s;
+          cursor: pointer;
+        }
+
+        h2:hover {
+          font-size: 1.8rem;
+        }
+      }
+
+    }
+
+
+    }
+}
+
+.ativado {
+  h2 {
+    font-size: 1.9rem !important;
+    color: $font-strong !important;
+  }
+}

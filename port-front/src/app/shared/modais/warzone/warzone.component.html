@@ -1,0 +1,47 @@
+<section class="container">
+
+  <div class="title">
+    <span>WARZONE</span>
+  </div>
+
+  <div class="img-ctn">
+    <button mat-mini-fab class="btn left" (click)="carousel('left')">
+      <i class="fas fa-angle-left"></i>
+    </button>
+    <div class="img" *ngIf="ponteiro === 1">
+      <img src="../../../../assets/imgs/angular/warzone.png" alt="pagina home adota-pets">
+    </div>
+    <div class="img" *ngIf="ponteiro === 2">
+      <img src="../../../../assets/imgs/angular/warzone-menu-arms.png" alt="pagina perdidos adota-pets">
+    </div>
+    <div class="img" *ngIf="ponteiro === 3">
+      <img src="../../../../assets/imgs/angular/warzone-arms.png" alt="pagina porque adotar">
+    </div>
+    <button mat-mini-fab class="btn rigth" (click)="carousel('rigth')">
+      <i class="fas fa-angle-right"></i>
+    </button>
+  </div>
+
+  <div class="card-container">
+    <mat-card class="card">
+      <mat-card-content class="content">
+        <span>
+          Projeto desenvolvido com Angular versão 11, utilizei o Angular Material para fazer alguns componentes
+          visuais. Projeto idealizado para auxílio dos meus estudos em Angular. Sem muita complexidade igual aos demais,
+          utilizei este projeto para me ajudar a trabalhar com o framework e com o conceito de uma Single-page application.
+        </span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="footer">
+    <div class="btn-footer">
+      <button mat-mini-fab class="close" mat-dialog-close>
+        <i class="fas fa-times"></i>
+      </button>
+      <button mat-mini-fab class="git">
+        <a href="https://github.com/ArthurGSantana/Project-MW" target="_blank"><i class="fab fa-github"></i></a>
+      </button>
+    </div>
+  </div>
+</section>
